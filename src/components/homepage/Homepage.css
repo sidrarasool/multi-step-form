@@ -1,0 +1,77 @@
+--root {
+  --input-width: 30%;
+  --btn-color: #da1b24;
+}
+.Homepage_Container {
+  padding: 50px;
+}
+
+.Homepage_VfLogoContainer {
+  position: absolute;
+  bottom: 5px;
+}
+
+.Homepage_EmailField {
+  background-color: white;
+  border-radius: 30px;
+  border: none;
+  height: 1.6rem;
+  width: 11.5rem;
+  box-shadow: 0px 0px 1.5px black;
+  padding: 0px 15px;
+  margin: 5px;
+}
+
+.Homepage_EmailField::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: grey;
+}
+
+.Homepage_EmailField:focus {
+  border: none important!;
+}
+
+.Homepage_countinue_btn {
+  height: 1.6rem;
+  width: 13.5rem;
+  background-color: red;
+  border: none;
+  box-shadow: 0px 0px 1.5px black;
+  border-radius: 30px;
+  padding: 0px 15px;
+  margin: 5px;
+}
+
+.Homepage_email_error {
+  color: red;
+}
+
+.HomePage_form_container {
+  background-color: #e7fbff;
+}
+
+.HomePage_form_navigation {
+  border-radius: 30px;
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+.HomePage_back_btn {
+  opacity: 0.5;
+  color: grey;
+}
+
+.HomePage_next_btn {
+  height: 1.6rem;
+  width: 4rem;
+  background-color: #da1b24;
+  border: none;
+  box-shadow: 0px 0px 1.5px black;
+  border-radius: 10px;
+  color: white;
+}
+
+.HomePage_close_btn {
+  left: 300px;
+}
