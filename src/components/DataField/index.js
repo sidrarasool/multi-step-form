@@ -10,10 +10,10 @@ const DataField = ({ label, data }) => {
       justifyContent="flex-start"
       className="DataField_container"
     >
-      <Grid xs={12}>
+      <Grid item xs={12} align="left">
         <Typography className="DataField_label">{label}</Typography>
       </Grid>
-      <Grid xs={12}>
+      <Grid item xs={12} align="left">
         <Typography className="DataField_data">{data}</Typography>
       </Grid>
     </Grid>

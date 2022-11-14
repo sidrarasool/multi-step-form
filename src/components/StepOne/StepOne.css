@@ -12,3 +12,37 @@
 .StepOne_email_error {
   color: #da1b24;
 }
+
+.StepOne_Error {
+  background-color: #ffe0e1;
+  border-radius: 30px;
+  border: none;
+  height: 1.6rem;
+  width: 11.5rem;
+  box-shadow: 0px 0px 1.5px black;
+  padding: 0px 15px;
+  margin: 5px 5px 5px 0px;
+  border: 1px solid red;
+}
+
+.StepOne_TextField {
+  background-color: white;
+  border-radius: 30px;
+  border: none;
+  height: 2rem;
+  width: 11.5rem;
+  box-shadow: 0px 0px 1.5px black;
+  padding: 0px 15px;
+  margin: 5px 5px 5px 0px;
+}
+
+.StepOne_Heading {
+  color: #457286;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.StepOne_SubHeading {
+  color: #457286;
+  margin-bottom: 20px;
+}

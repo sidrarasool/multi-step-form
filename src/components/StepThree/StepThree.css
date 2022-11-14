@@ -6,3 +6,7 @@
 .StepThree_error {
   color: red;
 }
+.StepThree_label {
+  font-weight: 600;
+  color: #457286;
+}

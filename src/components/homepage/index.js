@@ -46,11 +46,20 @@ const Homepage = () => {
   });
 
   return (
-    <Grid item container xs={12} className="Homepage_Container">
-      <Grid item xs={12}>
-        <Logo />
-      </Grid>
-      <Grid item xs={6}>
+    <Grid item container xs={12}>
+      {page === 0 && (
+        <Grid item xs={12} className="Homepage_heading_Container">
+          <Logo />
+        </Grid>
+      )}
+      <Grid
+        item
+        xs={12}
+        sm={6}
+        container
+        justifyContent="center"
+        alignItems="center"
+      >
         {showFinalPage ? (
           <FinalPage
             values={formValues}
@@ -60,11 +69,18 @@ const Homepage = () => {
           />
         ) : (
           <form id="music-app" onSubmit={formik.handleSubmit}>
-            {page === 0 && <StepOne formik={formik} setPage={setPage} />}
+            {page === 0 && <StepOne formik={formik} />}
             {page > 0 && (
-              <Grid item xs={12} className="HomePage_form_container">
-                <Grid container justifyContent="flex-end">
+              <Grid
+                item
+                xs={12}
+                className="HomePage_form_container"
+                container
+                alignItems="space-between"
+              >
+                <Grid item xs={12} container justifyContent="flex-end">
                   <IconButton
+                    className="HomePage_close_btn"
                     onClick={() => {
                       setPage(0);
                       formik.setValues({});
@@ -73,14 +89,17 @@ const Homepage = () => {
                     <CloseRoundedIcon />
                   </IconButton>
                 </Grid>
-                {page === 1 && <StepTwo formik={formik} />}
-                {page === 2 && <StepThree formik={formik} />}
-                {page === 3 && <StepFour formik={formik} />}
+                <Grid item xs={12}>
+                  {page === 1 && <StepTwo formik={formik} />}
+                  {page === 2 && <StepThree formik={formik} />}
+                  {page === 3 && <StepFour formik={formik} />}
+                </Grid>
                 <Grid
                   item
                   xs={12}
                   container
                   justifyContent="space-between"
+                  alignItems="center"
                   className="HomePage_form_navigation"
                 >
                   <Grid>
@@ -107,18 +126,20 @@ const Homepage = () => {
           </form>
         )}
       </Grid>
-      <Grid item xs={12} md={6}>
+      <Grid item xs={12} sm={6} className="HomePage_Felix">
         <Felix />
       </Grid>
-      <Grid
-        className="Homepage_VfLogoContainer"
-        item
-        xs={12}
-        container
-        justifyContent="center"
-      >
-        <VFLogo />
-      </Grid>
+      {page === 0 && (
+        <Grid
+          className="Homepage_VfLogoContainer"
+          item
+          xs={12}
+          container
+          justifyContent="center"
+        >
+          <VFLogo />
+        </Grid>
+      )}
     </Grid>
   );
 };

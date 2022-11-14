@@ -10,6 +10,7 @@ const FinalPage = ({ values, setPage, setFinalShowPage, formik }) => {
       className="FinalPage_container"
       container
       alignItems="center"
+      justifyContent="space-between"
       direction="column"
     >
       <Grid container justifyContent="flex-end">
@@ -45,11 +46,13 @@ const FinalPage = ({ values, setPage, setFinalShowPage, formik }) => {
         justifyContent="space-between"
         className="FinalPage_footer_container"
       >
-        <Grid>
-          <Typography>Your Invite Link:</Typography>
-          <Typography>felix.fm/rockpower</Typography>
+        <Grid item>
+          <Typography color="white" align="left">
+            Your Invite Link:
+          </Typography>
+          <Typography color="white">felix.fm/rockpower</Typography>
         </Grid>
-        <button>Share with your besties</button>
+        <button className="FinalPage_Sharebtn">Share with your besties</button>
       </Grid>
     </Grid>
   );

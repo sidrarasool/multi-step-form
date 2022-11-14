@@ -1,4 +1,5 @@
 import React from "react";
+import { Grid, Typography } from "@mui/material";
 import "./InputField.css";
 
 const InputField = ({
@@ -8,9 +9,24 @@ const InputField = ({
   placeholder,
   value = "",
   error,
+  label = "",
+  errorMessage = "",
+  height = "2",
 }) => {
   return (
-    <div>
+    <Grid
+      item
+      xs={12}
+      direction="column"
+      container
+      justifyContent="center"
+      alignItems="flex-start"
+    >
+      {label !== "" && (
+        <Typography variant="body" className="InputField_label">
+          {label}
+        </Typography>
+      )}
       <input
         className={error ? "InputField_Error" : "InputField_TextField"}
         name={name}
@@ -19,7 +35,12 @@ const InputField = ({
         onBlur={onBlur}
         placeholder={placeholder}
       />
-    </div>
+      {error && (
+        <Typography className="StepTwo_error" variant="caption">
+          {errorMessage}
+        </Typography>
+      )}
+    </Grid>
   );
 };
 

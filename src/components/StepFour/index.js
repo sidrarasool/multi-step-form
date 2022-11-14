@@ -1,64 +1,33 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
 import InputField from "../InputField";
+import FormHeading from "../FormHeading";
 import RadioItem from "../RadioItems";
 import "./StepFour.css";
 
 const StepFour = ({ formik }) => {
   return (
     <Grid item xs={12} container justifyContent="center" alignContent="center">
-      <Typography variant="h4">
-        Homestretch. Just a few more questions
-      </Typography>
-      <Grid
-        item
-        xs={12}
-        direction="column"
-        container
-        justifyContent="center"
-        alignItems="flex-start"
-      >
-        <Typography variant="body">
-          How Long does it take for you to get ready for work?
-        </Typography>
-        <InputField
-          name="readyTime"
-          placeholder="*Yawn* I usually.."
-          value={formik.values.readyTime}
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-        />
-        {formik.touched.readyTime && formik.errors.readyTime && (
-          <Typography className="StepFour_error" variant="caption">
-            Required
-          </Typography>
-        )}
-      </Grid>
-      <Grid
-        item
-        xs={12}
-        direction="column"
-        container
-        justifyContent="center"
-        alignItems="flex-start"
-      >
-        <Typography variant="body">
-          What is your go to song that makes you feel happy?
-        </Typography>
-        <InputField
-          name="happySong"
-          placeholder="Your favourite song"
-          value={formik.values.happySong}
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          error={formik.touched.happySong && formik.errors.happySong}
-        />
-        {formik.touched.happySong && formik.errors.happySong && (
-          <Typography className="StepFour_error" variant="caption">
-            Required
-          </Typography>
-        )}
-      </Grid>
+      <FormHeading text=" How Long does it take for you to get ready for work?" />
+      <InputField
+        name="readyTime"
+        placeholder="*Yawn* I usually.."
+        value={formik.values.readyTime}
+        onChange={formik.handleChange}
+        onBlur={formik.handleBlur}
+        label="How Long does it take for you to get ready for work?"
+        errorMessage=" Required"
+      />
+      <InputField
+        name="happySong"
+        placeholder="Your favourite song"
+        value={formik.values.happySong}
+        onChange={formik.handleChange}
+        onBlur={formik.handleBlur}
+        error={formik.touched.happySong && formik.errors.happySong}
+        label="What is your go to song that makes you feel happy?"
+        errorMessage=" Required"
+      />
       <Grid
         item
         xs={12}
@@ -68,7 +37,7 @@ const StepFour = ({ formik }) => {
         alignItems="flex-start"
       >
         <Grid>
-          <Typography variant="body">
+          <Typography variant="body" className="StepFour_label">
             Are you available for survey + early product releases?
           </Typography>
         </Grid>
