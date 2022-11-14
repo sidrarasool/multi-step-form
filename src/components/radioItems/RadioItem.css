@@ -12,7 +12,7 @@
   margin: 10px 10px 10px 0px;
 }
 
-.RadioItems_radio_input:checked + .radio_label {
+.RadioItems_radio_input:checked + .RadioItems_radio_label {
   background-color: #2d6be3;
   color: white;
   border: none;

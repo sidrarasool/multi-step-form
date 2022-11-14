@@ -1,0 +1,16 @@
+.DataField_label {
+  color: #6d97eb;
+  font-weight: bold;
+}
+
+.DataField_data {
+  background-color: #6d97eb;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.DataField_container {
+  margin: 10px;
+}

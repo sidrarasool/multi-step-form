@@ -11,9 +11,9 @@ const RadioItem = ({ value, onChange, name, defaultChecked = false, id }) => {
         onChange={onChange}
         value={value}
         defaultChecked={defaultChecked}
-        className="radio_input"
+        className="RadioItems_radio_input"
       />
-      <label htmlFor={id} className="radio_label">
+      <label htmlFor={id} className="RadioItems_radio_label">
         {value}
       </label>
     </>

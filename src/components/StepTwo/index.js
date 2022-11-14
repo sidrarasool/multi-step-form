@@ -1,15 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Grid, Typography } from "@mui/material";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
-import InputField from "../inputField";
+import InputField from "../InputField";
 import "./StepTwo.css";
 
 const StepTwo = ({ formik }) => {
   const [value, setValue] = useState();
-  useEffect(() => {
-    console.log("values", formik.values);
-  }, [formik]);
   return (
     <Grid item xs={12} container justifyContent="center" alignContent="center">
       <Typography variant="h4">
@@ -30,6 +27,7 @@ const StepTwo = ({ formik }) => {
           value={formik.values.nickname}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
+          error={formik.touched.nickname && formik.errors.nickname}
         />
         {formik.touched.nickname && formik.errors.nickname && (
           <Typography className="StepTwo_error" variant="caption">
@@ -52,6 +50,7 @@ const StepTwo = ({ formik }) => {
           value={formik.values.username}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
+          error={formik.touched.username && formik.errors.username}
         />
         {formik.touched.username && formik.errors.username && (
           <Typography className="StepTwo_error" variant="caption">

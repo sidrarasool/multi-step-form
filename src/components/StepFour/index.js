@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Grid, Typography } from "@mui/material";
-import InputField from "../inputField";
-import RadioItem from "../radioItems";
+import InputField from "../InputField";
+import RadioItem from "../RadioItems";
 import "./StepFour.css";
 
 const StepFour = ({ formik }) => {
-  useEffect(() => {
-    console.log("values", formik.values);
-  }, [formik]);
   return (
     <Grid item xs={12} container justifyContent="center" alignContent="center">
       <Typography variant="h4">
@@ -32,7 +29,7 @@ const StepFour = ({ formik }) => {
           onBlur={formik.handleBlur}
         />
         {formik.touched.readyTime && formik.errors.readyTime && (
-          <Typography className="StepTwo_error" variant="caption">
+          <Typography className="StepFour_error" variant="caption">
             Required
           </Typography>
         )}
@@ -54,9 +51,10 @@ const StepFour = ({ formik }) => {
           value={formik.values.happySong}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
+          error={formik.touched.happySong && formik.errors.happySong}
         />
         {formik.touched.happySong && formik.errors.happySong && (
-          <Typography className="StepTwo_error" variant="caption">
+          <Typography className="StepFour_error" variant="caption">
             Required
           </Typography>
         )}
@@ -97,6 +95,11 @@ const StepFour = ({ formik }) => {
             defaultChecked={formik.values.survey === "No"}
           />
         </Grid>
+        {formik.touched.survey && formik.errors.survey && (
+          <Typography className="StepFour_error" variant="caption">
+            Required
+          </Typography>
+        )}
       </Grid>
     </Grid>
   );

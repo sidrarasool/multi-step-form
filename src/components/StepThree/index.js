@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Grid, Typography } from "@mui/material";
-import RadioItem from "../radioItems";
+import RadioItem from "../RadioItems";
 import "react-phone-number-input/style.css";
 import "./StepThree.css";
 
 const StepThree = ({ formik }) => {
-  useEffect(() => {
-    console.log("values", formik.values);
-  }, [formik]);
   return (
     <Grid
       item
@@ -47,6 +44,11 @@ const StepThree = ({ formik }) => {
             defaultChecked={formik.values.device === "Android"}
           />
         </Grid>
+        {formik.touched.device && formik.errors.device && (
+          <Typography className="StepThree_error" variant="caption">
+            Required Field
+          </Typography>
+        )}
       </Grid>
       <Grid
         item
@@ -89,6 +91,11 @@ const StepThree = ({ formik }) => {
             defaultChecked={formik.values.airpods === "AirPods Pro"}
           />
         </Grid>
+        {formik.touched.airpods && formik.errors.airpods && (
+          <Typography className="StepThree_error" variant="caption">
+            Also required..
+          </Typography>
+        )}
       </Grid>
       <Grid
         item
@@ -124,6 +131,11 @@ const StepThree = ({ formik }) => {
             defaultChecked={formik.values.spotify === "Chronic"}
           />
         </Grid>
+        {formik.touched.spotify && formik.errors.spotify && (
+          <Typography className="StepThree_error" variant="caption">
+            Required! hook us up!
+          </Typography>
+        )}
       </Grid>
     </Grid>
   );

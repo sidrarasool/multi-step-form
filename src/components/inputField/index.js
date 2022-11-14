@@ -1,11 +1,18 @@
 import React from "react";
 import "./InputField.css";
 
-const InputField = ({ name, onChange, onBlur, placeholder, value="" }) => {
+const InputField = ({
+  name,
+  onChange,
+  onBlur,
+  placeholder,
+  value = "",
+  error,
+}) => {
   return (
     <div>
       <input
-        className="InputField_EmailField"
+        className={error ? "InputField_Error" : "InputField_TextField"}
         name={name}
         value={value}
         onChange={onChange}
