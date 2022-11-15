@@ -15,6 +15,7 @@ const StepFour = ({ formik }) => {
         value={formik.values.readyTime}
         onChange={formik.handleChange}
         onBlur={formik.handleBlur}
+        error={formik.touched.readyTime && formik.errors.readyTime}
         label="How Long does it take for you to get ready for work?"
         errorMessage=" Required"
       />
