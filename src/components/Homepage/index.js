@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Grid, Typography, IconButton } from "@mui/material";
 import { useFormik } from "formik";
 import { ReactComponent as Logo } from "../../images/Logo.svg";
-import { ReactComponent as VFLogo } from "../../images/VFLogo.svg";
-import { ReactComponent as Felix } from "../../images/Felix.svg";
+import Felix from "../../images/Felix.svg";
+import VFLogo from "../../images/VFLogo.svg";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import validationSchema from "../ValidationSchema";
 import StepOne from "../StepOne";
@@ -46,88 +46,116 @@ const Homepage = () => {
   });
 
   return (
-    <Grid item container xs={12}>
+    <Grid
+      item
+      xs={12}
+      container
+      alignItems="space-between"
+      justifyContent="center"
+    >
       {page === 0 && (
-        <Grid item xs={12} className="Homepage_heading_Container">
+        <Grid
+          item
+          xs={12}
+          className="Homepage_heading_Container"
+          container
+          justifyContent="center"
+        >
           <Logo />
         </Grid>
       )}
-      <Grid
-        item
-        xs={12}
-        sm={6}
-        container
-        justifyContent="center"
-        alignItems="center"
-      >
-        {showFinalPage ? (
-          <FinalPage
-            values={formValues}
-            setPage={setPage}
-            setFinalShowPage={setFinalShowPage}
-            formik={formik}
-          />
-        ) : (
-          <form id="music-app" onSubmit={formik.handleSubmit}>
-            {page === 0 && <StepOne formik={formik} />}
-            {page > 0 && (
-              <Grid
-                item
-                xs={12}
-                className="HomePage_form_container"
-                container
-                alignItems="space-between"
-              >
-                <Grid item xs={12} container justifyContent="flex-end">
-                  <IconButton
-                    className="HomePage_close_btn"
-                    onClick={() => {
-                      setPage(0);
-                      formik.setValues({});
-                    }}
-                  >
-                    <CloseRoundedIcon />
-                  </IconButton>
-                </Grid>
-                <Grid item xs={12}>
-                  {page === 1 && <StepTwo formik={formik} />}
-                  {page === 2 && <StepThree formik={formik} />}
-                  {page === 3 && <StepFour formik={formik} />}
-                </Grid>
+      {page === 0 && (
+        <Grid item xs={12}>
+          <Typography variant="h4" className="HomePage_Phone_Heading">
+            An Audio Assistant For Happiness
+          </Typography>
+        </Grid>
+      )}
+      <Grid item xs={12} container wrap="wrap-reverse">
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          container
+          justifyContent="center"
+          alignItems="center"
+        >
+          {showFinalPage ? (
+            <FinalPage
+              values={formValues}
+              setPage={setPage}
+              setFinalShowPage={setFinalShowPage}
+              formik={formik}
+            />
+          ) : (
+            <form id="music-app" onSubmit={formik.handleSubmit}>
+              {page === 0 && <StepOne formik={formik} />}
+              {page > 0 && (
                 <Grid
                   item
                   xs={12}
+                  className="HomePage_form_container"
                   container
-                  justifyContent="space-between"
-                  alignItems="center"
-                  className="HomePage_form_navigation"
+                  alignItems="space-between"
                 >
-                  <Grid>
-                    <Typography
-                      className="HomePage_back_btn"
+                  <Grid item xs={12} container justifyContent="flex-end">
+                    <IconButton
+                      className="HomePage_close_btn"
                       onClick={() => {
-                        setPage(page - 1);
+                        setPage(0);
+                        formik.setValues({});
                       }}
                     >
-                      BACK
-                    </Typography>
+                      <CloseRoundedIcon />
+                    </IconButton>
                   </Grid>
-                  <Grid>
-                    <Typography>{page}/3</Typography>
+                  <Grid item xs={12}>
+                    {page === 1 && <StepTwo formik={formik} />}
+                    {page === 2 && <StepThree formik={formik} />}
+                    {page === 3 && <StepFour formik={formik} />}
                   </Grid>
-                  <Grid>
-                    <button className="HomePage_next_btn" type="submit">
-                      {page === 3 ? "Submit" : "Next"}
-                    </button>
+                  <Grid
+                    item
+                    xs={12}
+                    container
+                    justifyContent="space-between"
+                    alignItems="center"
+                    className="HomePage_form_navigation"
+                  >
+                    <Grid>
+                      <Typography
+                        className="HomePage_back_btn"
+                        onClick={() => {
+                          setPage(page - 1);
+                        }}
+                      >
+                        BACK
+                      </Typography>
+                    </Grid>
+                    <Grid>
+                      <Typography>{page}/3</Typography>
+                    </Grid>
+                    <Grid>
+                      <button className="HomePage_next_btn" type="submit">
+                        {page === 3 ? "Submit" : "Next"}
+                      </button>
+                    </Grid>
                   </Grid>
                 </Grid>
-              </Grid>
-            )}
-          </form>
-        )}
-      </Grid>
-      <Grid item xs={12} sm={6} className="HomePage_Felix">
-        <Felix />
+              )}
+            </form>
+          )}
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          container
+          justifyContent="center"
+          alignItems="center"
+        >
+          <img src={Felix} alt="VF Logo" className="HomePage_Felix" />
+        </Grid>
       </Grid>
       {page === 0 && (
         <Grid
@@ -137,11 +165,10 @@ const Homepage = () => {
           container
           justifyContent="center"
         >
-          <VFLogo />
+          <img src={VFLogo} alt="VF Logo" />
         </Grid>
       )}
     </Grid>
   );
 };
-
 export default Homepage;

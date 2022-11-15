@@ -1,16 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,300&display=swap");
+
 .StepOne_btn {
   height: 1.6rem;
   width: 13.5rem;
-  background-color: red;
+  background-color: #da1b24;
   border: none;
   box-shadow: 0px 0px 1.5px black;
   border-radius: 30px;
   padding: 0px 15px;
-  margin: 5px;
+  margin: 5px 5px 5px 0px;
 }
 
 .StepOne_email_error {
   color: #da1b24;
+  padding-left: 5px;
 }
 
 .StepOne_Error {
@@ -22,7 +25,7 @@
   box-shadow: 0px 0px 1.5px black;
   padding: 0px 15px;
   margin: 5px 5px 5px 0px;
-  border: 1px solid red;
+  border: 1px solid #da1b24;
 }
 
 .StepOne_TextField {
@@ -37,12 +40,21 @@
 }
 
 .StepOne_Heading {
-  color: #457286;
-  font-weight: bolder;
-  margin-bottom: 20px;
+  color: #16445e;
+  font-family: "Open Sans", sans-serif !important;
 }
 
 .StepOne_SubHeading {
-  color: #457286;
-  margin-bottom: 20px;
+  color: #16445e;
+  font-family: sans-serif !important;
+  margin-bottom: 50px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .StepOne_SubHeading {
+    display: none;
+  }
+  .StepOne_Heading {
+    display: none;
+  }
 }

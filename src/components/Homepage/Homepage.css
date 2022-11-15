@@ -3,12 +3,11 @@
   --btn-color: #da1b24;
 }
 .Homepage_heading_Container {
-  margin: 50px !important;
+  margin-top: 40px !important;
 }
 
 .Homepage_VfLogoContainer {
-  position: absolute;
-  bottom: 5px;
+  margin-bottom: 10px !important;
 }
 
 .HomePage_form_container {
@@ -44,8 +43,19 @@
   width: 30px;
 }
 
-@media only screen and (max-width: 768px) {
-  .HomePage_Felix {
+.HomePage_Felix {
+  width: 100%;
+  height: auto;
+}
+
+.HomePage_Phone_Heading {
+  margin-top: 30px !important;
+  color: #16445e;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .HomePage_Phone_Heading {
     display: none;
   }
 }

@@ -11,7 +11,6 @@ const InputField = ({
   error,
   label = "",
   errorMessage = "",
-  height = "2",
 }) => {
   return (
     <Grid
