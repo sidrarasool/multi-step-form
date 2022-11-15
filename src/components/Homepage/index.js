@@ -47,6 +47,7 @@ const Homepage = () => {
 
   return (
     <Grid item container xs={12}>
+      <Typography>changes</Typography>
       {page === 0 && (
         <Grid item xs={12} className="Homepage_heading_Container">
           <Logo />
