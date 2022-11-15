@@ -4,6 +4,7 @@ import { useFormik } from "formik";
 import { ReactComponent as Logo } from "../../images/Logo.svg";
 import Felix from "../../images/Felix.svg";
 import VFLogo from "../../images/VFLogo.svg";
+import Cloud1 from "../../images/Cloud1.svg";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import validationSchema from "../ValidationSchema";
 import StepOne from "../StepOne";
@@ -146,16 +147,33 @@ const Homepage = () => {
             </form>
           )}
         </Grid>
-        <Grid
-          item
-          xs={12}
-          sm={6}
-          container
-          justifyContent="center"
-          alignItems="center"
-        >
-          <img src={Felix} alt="VF Logo" className="HomePage_Felix" />
-        </Grid>
+        {page === 0 ? (
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            container
+            justifyContent="center"
+            alignItems="center"
+          >
+            <img src={Felix} alt="VF Logo" className="HomePage_Felix" />
+          </Grid>
+        ) : (
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            container
+            justifyContent="center"
+            alignItems="center"
+            className="HomePage_Form_Steps_Felix"
+          >
+            {page === 1 && (
+              <img src={Cloud1} alt="cloud1" className="HomePage_Cloud" />
+            )}
+            <img src={Felix} alt="VF Logo" className="HomePage_Felix" />
+          </Grid>
+        )}
       </Grid>
       {page === 0 && (
         <Grid

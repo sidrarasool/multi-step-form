@@ -28,10 +28,15 @@
   box-shadow: 0px 0px 1.5px black;
   padding: 0px 15px;
   margin: 5px 5px 5px 0px;
-  border: 1px solid red;
+  border: 1px solid #da1b24;
 }
 
 .InputField_label {
   font-weight: 600;
-  color: #457286;
+  color: #16445e;
+}
+
+.InputField_ErrorMessage {
+  color: #da1b24;
+  margin-left: 5px !important;
 }
