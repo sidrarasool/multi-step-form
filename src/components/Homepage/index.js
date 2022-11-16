@@ -7,6 +7,7 @@ import VFLogo from "../../images/VFLogo.svg";
 import Cloud1 from "../../images/Cloud1.svg";
 import Cloud2 from "../../images/Cloud2.svg";
 import Cloud3 from "../../images/Cloud3.svg";
+import CloudFinal from "../../images/CloudFinal.svg";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import validationSchema from "../ValidationSchema";
 import StepOne from "../StepOne";
@@ -178,6 +179,13 @@ const Homepage = () => {
             )}
             {page === 3 && (
               <img src={Cloud3} alt="cloud3" className="HomePage_Cloud" />
+            )}
+            {showFinalPage && (
+              <img
+                src={CloudFinal}
+                alt="cloud final page"
+                className="HomePage_Cloud"
+              />
             )}
             <img src={Felix} alt="VF Logo" className="HomePage_Felix" />
           </Grid>
