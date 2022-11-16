@@ -5,6 +5,8 @@ import { ReactComponent as Logo } from "../../images/Logo.svg";
 import Felix from "../../images/Felix.svg";
 import VFLogo from "../../images/VFLogo.svg";
 import Cloud1 from "../../images/Cloud1.svg";
+import Cloud2 from "../../images/Cloud2.svg";
+import Cloud3 from "../../images/Cloud3.svg";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import validationSchema from "../ValidationSchema";
 import StepOne from "../StepOne";
@@ -170,6 +172,12 @@ const Homepage = () => {
           >
             {page === 1 && (
               <img src={Cloud1} alt="cloud1" className="HomePage_Cloud" />
+            )}
+            {page === 2 && (
+              <img src={Cloud2} alt="cloud2" className="HomePage_Cloud" />
+            )}
+            {page === 3 && (
+              <img src={Cloud3} alt="cloud3" className="HomePage_Cloud" />
             )}
             <img src={Felix} alt="VF Logo" className="HomePage_Felix" />
           </Grid>

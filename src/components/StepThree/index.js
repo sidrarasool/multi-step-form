@@ -24,7 +24,7 @@ const StepThree = ({ formik }) => {
         alignItems="flex-start"
       >
         <Grid>
-          <Typography variant="body" className="StepThree_label">
+          <Typography variant="body" align="left" className="StepThree_label">
             What kind of mobile device do you have?
           </Typography>
         </Grid>
