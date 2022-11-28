@@ -1,15 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,300&display=swap");
-
-:root {
-  --email-error: #da1b24;
-  --email-error-background: #ffe0e1;
-  --headings: #16445e;
-}
+@import "../../GlobalStyles.css";
 
 .StepOne_btn {
   height: 1.6rem;
   width: 13.5rem;
-  background-color: var(--email-error);
+  background-color: var(--primary-btn);
+  color: var(--primary-btn-text);
   border: none;
   box-shadow: 0px 0px 1.5px black;
   border-radius: 30px;
@@ -18,20 +14,20 @@
 }
 
 .StepOne_email_error {
-  color: var(--email-error);
+  color: var(--error-text);
   padding-left: 5px;
 }
 
 .StepOne_Error {
-  background-color: var(--email-error-background);
+  background-color: var(--error-background);
   border-radius: 30px;
   border: none;
-  height: 1.6rem;
+  height: 2rem;
   width: 11.5rem;
   box-shadow: 0px 0px 1.5px black;
   padding: 0px 15px;
   margin: 5px 5px 5px 0px;
-  border: 1px solid var(--email-error);
+  border: 1px solid var(--error-text);
 }
 
 .StepOne_TextField {
@@ -45,15 +41,15 @@
   margin: 5px 5px 5px 0px;
 }
 
-.StepOne_Heading {
-  color: var(--headings);
-  font-family: "Open Sans", sans-serif !important;
+.StepOne_Heading.StepOne_Heading {
+  color: var(--primary);
+  font-family: "Open Sans", sans-serif;
 }
 
-.StepOne_SubHeading {
-  color: var(--headings);
-  font-family: sans-serif !important;
-  margin-bottom: 50px !important;
+.StepOne_SubHeading.StepOne_SubHeading {
+  color: var(--primary);
+  font-family: sans-serif;
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 768px) {

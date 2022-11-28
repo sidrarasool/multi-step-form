@@ -1,12 +1,13 @@
+@import "../../GlobalStyles.css";
+
 .stepThree_container {
-  background-color: #e7fbff;
   padding: 30px;
 }
 
 .StepThree_error {
-  color: red;
+  color: var(--error);
 }
 .StepThree_label {
   font-weight: 600;
-  color: #457286;
+  color: var(--primary);
 }

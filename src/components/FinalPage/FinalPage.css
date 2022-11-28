@@ -1,7 +1,7 @@
+@import "../../GlobalStyles.css";
+
 :root {
   --heading: #fff;
-  --background-clr: #2d6be3;
-  --text: #16445e;
   --footer-background: #7843ea;
   --share-btn: #fae41c;
 }
@@ -20,13 +20,13 @@
 }
 
 .FinalPage_summary_container {
-  background-color: var(--background-clr);
+  background-color: var(--secondary-background);
   border-radius: 10px;
   padding: 20px;
 }
 
 .FinalPage_title {
-  color: var(--text);
+  color: var(--primary);
   font-weight: bolder;
   margin-bottom: 50px;
 }

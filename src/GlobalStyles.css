@@ -1,0 +1,10 @@
+:root {
+  --primary: #16445e;
+  --error-background: #ffe0e1;
+  --error-text: red;
+  --primary-btn: #da1b24;
+  --primary-btn-text: #fff;
+  --form-background: #e7fbff;
+  --error: #ff0000;
+  --secondary-background: #2d6be3;
+}

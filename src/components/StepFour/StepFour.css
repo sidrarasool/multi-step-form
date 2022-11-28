@@ -1,8 +1,10 @@
+@import "../../GlobalStyles.css";
+
 .StepFour_error {
-  color: red;
+  color: var(--error);
 }
 
 .StepFour_label {
   font-weight: 600;
-  color: #457286;
+  color: var(--primary);
 }

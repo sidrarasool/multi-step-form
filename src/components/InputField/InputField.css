@@ -1,13 +1,13 @@
+@import "../../GlobalStyles.css";
+
 :root {
   --textfield-background: #fff;
-  --error-background: #ffe0e1;
   --placeholder: grey;
-  --textfield-label: #457286;
-  --error-text: red;
 }
 
 .InputField_TextField {
   background-color: var(--textfield-background);
+  color: var(--primary);
   border-radius: 30px;
   border: none;
   height: 2rem;
@@ -41,7 +41,7 @@
 
 .InputField_label {
   font-weight: 600;
-  color: var(--textfield-label);
+  color: var(--primary);
 }
 
 .InputField_ErrorText {

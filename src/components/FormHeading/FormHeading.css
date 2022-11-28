@@ -1,5 +1,7 @@
+@import "../../GlobalStyles.css";
+
 .FormHeading_heading {
-  color: #457286;
+  color: var(--primary);
   font-weight: bold;
   margin-bottom: 20px;
 }
