@@ -1,3 +1,11 @@
+:root {
+  --heading: #fff;
+  --background-clr: #2d6be3;
+  --text: #16445e;
+  --footer-background: #7843ea;
+  --share-btn: #fae41c;
+}
+
 .FinalPage_container {
   background-image: url("../../images/FinalPage.svg");
   width: 100%;
@@ -8,30 +16,30 @@
 }
 
 .FinalPage_heading {
-  color: white;
+  color: var(--heading);
 }
 
 .FinalPage_summary_container {
-  background-color: #2d6be3;
+  background-color: var(--background-clr);
   border-radius: 10px;
   padding: 20px;
 }
 
 .FinalPage_title {
-  color: #16445e;
+  color: var(--text);
   font-weight: bolder;
   margin-bottom: 50px;
 }
 
 .FinalPage_footer_container {
-  background-color: #7843ea;
+  background-color: var(--footer-background);
   padding: 15px;
   border-radius: 30px 30px 0px 0px;
 }
 
 .FinalPage_Sharebtn {
-  background-color: #fae41c;
-  color: #16445e;
+  background-color: var(--share-btn);
+  color: (var(--text));
   padding: 10px;
   border-radius: 10px;
 }

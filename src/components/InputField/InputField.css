@@ -1,5 +1,13 @@
+:root {
+  --textfield-background: #fff;
+  --error-background: #ffe0e1;
+  --placeholder: grey;
+  --textfield-label: #457286;
+  --error-text: red;
+}
+
 .InputField_TextField {
-  background-color: white;
+  background-color: var(--textfield-background);
   border-radius: 30px;
   border: none;
   height: 2rem;
@@ -12,7 +20,7 @@
 .InputField_TextField::placeholder {
   font-weight: bold;
   opacity: 0.5;
-  color: grey;
+  color: var(--placeholder);
 }
 
 .InputField_TextField:focus {
@@ -20,7 +28,7 @@
 }
 
 .InputField_Error {
-  background-color: #ffe0e1;
+  background-color: var(--error-background);
   border-radius: 30px;
   border: none;
   height: 2rem;
@@ -33,5 +41,9 @@
 
 .InputField_label {
   font-weight: 600;
-  color: #457286;
+  color: var(--textfield-label);
+}
+
+.InputField_ErrorText {
+  color: var(--error-text);
 }

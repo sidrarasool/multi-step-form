@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Grid, Typography, IconButton } from "@mui/material";
 import { useFormik } from "formik";
 import { ReactComponent as Logo } from "../../images/Logo.svg";
-import Felix from "../../images/Felix.svg";
-import VFLogo from "../../images/VFLogo.svg";
+import { ReactComponent as Felix } from "../../images/Felix.svg";
+import { ReactComponent as VFLogo } from "../../images/VFLogo.svg";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import validationSchema from "../ValidationSchema";
 import StepOne from "../StepOne";
@@ -57,7 +57,7 @@ const Homepage = () => {
         <Grid
           item
           xs={12}
-          className="Homepage_heading_Container"
+          className="Homepage_HeadingContainer"
           container
           justifyContent="center"
         >
@@ -66,7 +66,7 @@ const Homepage = () => {
       )}
       {page === 0 && (
         <Grid item xs={12}>
-          <Typography variant="h4" className="HomePage_Phone_Heading">
+          <Typography variant="h4" className="HomePage_PhoneHeading">
             An Audio Assistant For Happiness
           </Typography>
         </Grid>
@@ -94,13 +94,13 @@ const Homepage = () => {
                 <Grid
                   item
                   xs={12}
-                  className="HomePage_form_container"
+                  className="HomePage_FormContainer"
                   container
                   alignItems="space-between"
                 >
                   <Grid item xs={12} container justifyContent="flex-end">
                     <IconButton
-                      className="HomePage_close_btn"
+                      className="HomePage_CloseBtn"
                       onClick={() => {
                         setPage(0);
                         formik.setValues({});
@@ -120,11 +120,11 @@ const Homepage = () => {
                     container
                     justifyContent="space-between"
                     alignItems="center"
-                    className="HomePage_form_navigation"
+                    className="HomePage_FormNavigation"
                   >
                     <Grid>
                       <Typography
-                        className="HomePage_back_btn"
+                        className="HomePage_BackBtn"
                         onClick={() => {
                           setPage(page - 1);
                         }}
@@ -136,7 +136,7 @@ const Homepage = () => {
                       <Typography>{page}/3</Typography>
                     </Grid>
                     <Grid>
-                      <button className="HomePage_next_btn" type="submit">
+                      <button className="HomePage_NextbBtn" type="submit">
                         {page === 3 ? "Submit" : "Next"}
                       </button>
                     </Grid>
@@ -154,7 +154,7 @@ const Homepage = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <img src={Felix} alt="VF Logo" className="HomePage_Felix" />
+          <Felix className="HomePage_Felix" />
         </Grid>
       </Grid>
       {page === 0 && (
@@ -165,7 +165,7 @@ const Homepage = () => {
           container
           justifyContent="center"
         >
-          <img src={VFLogo} alt="VF Logo" />
+          <VFLogo />
         </Grid>
       )}
     </Grid>

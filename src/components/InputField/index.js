@@ -35,7 +35,7 @@ const InputField = ({
         placeholder={placeholder}
       />
       {error && (
-        <Typography className="StepTwo_error" variant="caption">
+        <Typography className="InputField_ErrorText" variant="caption">
           {errorMessage}
         </Typography>
       )}

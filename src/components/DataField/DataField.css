@@ -1,11 +1,17 @@
+:root {
+  --datafield-label: #6d97eb;
+  --datafield-background: #6d97eb;
+  --datafield-text: #fff;
+}
+
 .DataField_label {
-  color: #6d97eb;
+  color: var(--datafield-label);
   font-weight: bold;
 }
 
 .DataField_data {
-  background-color: #6d97eb;
-  color: white;
+  background-color: var(--datafield-background);
+  color: var(--datafield-text);
   font-weight: bold;
   border-radius: 15px;
   padding: 5px;
