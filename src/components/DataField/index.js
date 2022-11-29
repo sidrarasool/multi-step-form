@@ -8,7 +8,7 @@ const DataField = ({ label, data }) => {
       container
       alignItems="flex-start"
       justifyContent="flex-start"
-      className="DataField_container"
+      className="DateField DataField_container"
     >
       <Grid item xs={12} align="left">
         <Typography className="DataField_label">{label}</Typography>

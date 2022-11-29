@@ -7,7 +7,7 @@ import "./FinalPage.css";
 const FinalPage = ({ values, setPage, setFinalShowPage, formik }) => {
   return (
     <Grid
-      className="FinalPage_container"
+      className="FinalPage"
       container
       alignItems="center"
       justifyContent="space-between"
