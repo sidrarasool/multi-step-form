@@ -1,51 +1,59 @@
---root {
-  --input-width: 30%;
-  --btn-color: #da1b24;
-}
-.Homepage_heading_Container {
-  margin: 50px !important;
+.Homepage_HeadingContainer.Homepage_HeadingContainer {
+  margin-top: 40px;
 }
 
-.Homepage_VfLogoContainer {
-  position: absolute;
-  bottom: 5px;
+.Homepage_VfLogoContainer.Homepage_VfLogoContainer {
+  margin-bottom: 10px;
 }
 
-.HomePage_form_container {
-  background-color: #e7fbff;
+.HomePage_FormContainer {
+  background-color: var(--form-background);
   height: 100vh;
   padding: 50px;
 }
 
-.HomePage_form_navigation {
+.HomePage_FormNavigation {
   border-radius: 30px;
   border: 1px solid grey;
   padding: 10px;
   height: fit-content;
 }
 
-.HomePage_back_btn {
+.HomePage_BackBtn {
   opacity: 0.5;
   color: grey;
 }
 
-.HomePage_next_btn {
+.HomePage_NextbBtn {
   height: 1.6rem;
   width: 4rem;
-  background-color: #da1b24;
+  background-color: var(--primary-btn);
   border: none;
-  box-shadow: 0px 0px 1.5px black;
+  box-shadow: 0px 0px 1.5px var(--dark);
   border-radius: 10px;
-  color: white;
+  color: var(--light);
 }
 
-.HomePage_close_btn {
+.HomePage_CloseBtn {
   height: 30px;
   width: 30px;
 }
 
-@media only screen and (max-width: 768px) {
-  .HomePage_Felix {
+.HomePage_PhoneHeading.HomePage_PhoneHeading {
+  margin-top: 30px;
+  color: var(--primary);
+  font-family: "Open Sans", sans-serif;
+}
+
+.HomePage_Felix {
+  height: 300px;
+}
+
+@media only screen and (min-width: 768px) {
+  .HomePage_PhoneHeading {
     display: none;
+  }
+  .HomePage_Felix {
+    height: 600px;
   }
 }

@@ -3,17 +3,17 @@
 }
 
 .RadioItems_radio_label {
-  border: 1px solid #16445e;
+  border: 1px solid var(--primary);
   border-radius: 10px;
   padding: 8px;
-  background-color: white;
-  color: #16445e;
-  box-shadow: 0px 0px 1.5px black;
+  background-color: var(--light);
+  color: var(--primary);
+  box-shadow: 0px 0px 1.5px var(--dark);
   margin: 10px 10px 10px 0px;
 }
 
 .RadioItems_radio_input:checked + .RadioItems_radio_label {
-  background-color: #2d6be3;
-  color: white;
+  background-color: var(--secondary-background);
+  color: var(--light);
   border: none;
 }

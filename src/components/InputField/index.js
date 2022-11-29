@@ -11,7 +11,6 @@ const InputField = ({
   error,
   label = "",
   errorMessage = "",
-  height = "2",
 }) => {
   return (
     <Grid
@@ -21,6 +20,7 @@ const InputField = ({
       container
       justifyContent="center"
       alignItems="flex-start"
+      className="InputField"
     >
       {label !== "" && (
         <Typography variant="body" className="InputField_label">
@@ -36,7 +36,7 @@ const InputField = ({
         placeholder={placeholder}
       />
       {error && (
-        <Typography className="StepTwo_error" variant="caption">
+        <Typography className="InputField_ErrorText" variant="caption">
           {errorMessage}
         </Typography>
       )}
