@@ -20,6 +20,7 @@ const InputField = ({
       container
       justifyContent="center"
       alignItems="flex-start"
+      className="InputField"
     >
       {label !== "" && (
         <Typography variant="body" className="InputField_label">

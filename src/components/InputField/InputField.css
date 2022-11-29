@@ -1,10 +1,17 @@
+@import "../../GlobalStyles.css";
+
+:root {
+  --placeholder: grey;
+}
+
 .InputField_TextField {
-  background-color: white;
+  background-color: var(--light);
+  color: var(--primary);
   border-radius: 30px;
   border: none;
   height: 2rem;
   width: 85%;
-  box-shadow: 0px 0px 1.5px black;
+  box-shadow: 0px 0px 1.5px var(--dark);
   padding: 0px 15px;
   margin: 5px 5px 5px 0px;
 }
@@ -12,7 +19,7 @@
 .InputField_TextField::placeholder {
   font-weight: bold;
   opacity: 0.5;
-  color: grey;
+  color: var(--placeholder);
 }
 
 .InputField_TextField:focus {
@@ -20,12 +27,12 @@
 }
 
 .InputField_Error {
-  background-color: #ffe0e1;
+  background-color: var(--error-background);
   border-radius: 30px;
   border: none;
   height: 2rem;
   width: 85%;
-  box-shadow: 0px 0px 1.5px black;
+  box-shadow: 0px 0px 1.5px var(--dark);
   padding: 0px 15px;
   margin: 5px 5px 5px 0px;
   border: 1px solid #da1b24;
@@ -33,10 +40,10 @@
 
 .InputField_label {
   font-weight: 600;
-  color: #16445e;
+  color: var(--primary);
 }
 
-.InputField_ErrorMessage {
-  color: #da1b24;
-  margin-left: 5px !important;
+.InputField_ErrorMessage.InputField_ErrorMessage {
+  color: var(--error-text);
+  margin-left: 5px;
 }

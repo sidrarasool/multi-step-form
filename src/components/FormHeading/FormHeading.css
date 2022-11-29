@@ -1,7 +1,7 @@
 .FormHeading_heading {
-  color: #16445e;
-  font-weight: bold !important;
-  margin-bottom: 50px !important;
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {

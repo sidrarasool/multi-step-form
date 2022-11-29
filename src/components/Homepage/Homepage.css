@@ -1,57 +1,52 @@
---root {
-  --input-width: 30%;
-  --btn-color: #da1b24;
-}
-.Homepage_heading_Container {
-  margin-top: 40px !important;
+.Homepage_HeadingContainer.Homepage_HeadingContainer {
+  margin-top: 40px;
 }
 
-.Homepage_VfLogoContainer {
-  margin-bottom: 10px !important;
+.Homepage_VfLogoContainer.Homepage_VfLogoContainer {
+  margin-bottom: 10px;
 }
 
-.HomePage_form_container {
-  background-color: #e7fbff;
+.HomePage_FormContainer {
+  background-color: var(--form-background);
   height: 100vh;
   padding: 50px;
 }
 
-.HomePage_form_navigation {
+.HomePage_FormNavigation {
   border-radius: 30px;
   border: 1px solid grey;
   padding: 10px;
   height: fit-content;
 }
 
-.HomePage_back_btn {
+.HomePage_BackBtn {
   opacity: 0.5;
   color: grey;
 }
 
-.HomePage_next_btn {
+.HomePage_NextbBtn {
   height: 1.6rem;
   width: 4rem;
-  background-color: #da1b24;
+  background-color: var(--primary-btn);
   border: none;
-  box-shadow: 0px 0px 1.5px black;
+  box-shadow: 0px 0px 1.5px var(--dark);
   border-radius: 10px;
-  color: white;
+  color: var(--light);
 }
 
-.HomePage_close_btn {
+.HomePage_CloseBtn {
   height: 30px;
   width: 30px;
 }
 
-.HomePage_Felix {
-  width: 100%;
-  height: auto;
+.HomePage_PhoneHeading.HomePage_PhoneHeading {
+  margin-top: 30px;
+  color: var(--primary);
+  font-family: "Open Sans", sans-serif;
 }
 
-.HomePage_Phone_Heading {
-  margin-top: 30px !important;
-  color: #16445e;
-  font-family: "Open Sans", sans-serif !important;
+.HomePage_Felix {
+  height: 300px;
 }
 
 .HomePage_Cloud {
@@ -61,21 +56,24 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .HomePage_Phone_Heading {
+  .HomePage_PhoneHeading {
     display: none;
+  }
+  .HomePage_Felix {
+    height: 600px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .HomePage_Form_Steps_Felix {
-    display: none !important;
+  .HomePage_FormSteps.HomePage_FormSteps {
+    display: none;
   }
   .HomePage_form_navigation {
     bottom: 0px;
     position: absolute;
     left: 0px;
     border-radius: 10px 10px 0px 0px;
-    background-color: white;
+    background-color: var(--light);
     border-bottom: none;
   }
 }
