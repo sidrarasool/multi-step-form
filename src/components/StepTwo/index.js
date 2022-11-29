@@ -3,7 +3,6 @@ import { Grid, Typography } from "@mui/material";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import InputField from "../InputField";
-import FormHeading from "../FormHeading";
 import "./StepTwo.css";
 
 const StepTwo = ({ formik }) => {
@@ -16,7 +15,9 @@ const StepTwo = ({ formik }) => {
       alignContent="center"
       justifyContent="flex-start"
     >
-      <FormHeading text="Your ears will love you. Complete your details below:" />
+      <Typography className="FormHeading">
+        Your ears will love you. Complete your details below:
+      </Typography>
       <InputField
         name="nickname"
         placeholder="Tim Tim"

@@ -1,11 +1,15 @@
+.DateField {
+  --datafield: #6d97eb;
+}
+
 .DataField_label {
-  color: #6d97eb;
+  color: var(--datafield);
   font-weight: bold;
 }
 
 .DataField_data {
-  background-color: #6d97eb;
-  color: white;
+  background-color: var(--datafield);
+  color: var(--light);
   font-weight: bold;
   border-radius: 15px;
   padding: 5px;

@@ -1,8 +1,8 @@
 .StepFour_error {
-  color: #da1b24;
+  color: var(--error);
 }
 
 .StepFour_label {
-  font-weight: 600;
-  color: #16445e;
+  font-weight: 540;
+  color: var(--primary);
 }

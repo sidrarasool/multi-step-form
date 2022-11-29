@@ -1,12 +1,12 @@
 .stepThree_container {
-  background-color: #e7fbff;
   padding: 30px;
 }
 
 .StepThree_error {
-  color: #da1b24;
+  color: var(--error);
 }
-.StepThree_label {
-  font-weight: 600;
-  color: #16445e;
+
+.StepThree_label.StepThree_label {
+  font-weight: 540;
+  color: var(--primary);
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
 import RadioItem from "../RadioItems";
-import FormHeading from "../FormHeading";
 import "react-phone-number-input/style.css";
 import "./StepThree.css";
 
@@ -14,7 +13,9 @@ const StepThree = ({ formik }) => {
       alignContent="center"
       className="stepThree_container"
     >
-      <FormHeading text="Building your audio preferences" />
+      <Typography className="FormHeading">
+        Building your audio preferences
+      </Typography>
       <Grid
         item
         xs={12}
@@ -24,7 +25,7 @@ const StepThree = ({ formik }) => {
         alignItems="flex-start"
       >
         <Grid>
-          <Typography variant="body" align="left" className="StepThree_label">
+          <Typography variant="body1" align="left" className="StepThree_label">
             What kind of mobile device do you have?
           </Typography>
         </Grid>
@@ -59,7 +60,7 @@ const StepThree = ({ formik }) => {
         alignItems="flex-start"
       >
         <Grid>
-          <Typography variant="body" className="StepThree_label">
+          <Typography variant="body1" align="left" className="StepThree_label">
             Do you own AirPods?
           </Typography>
         </Grid>
@@ -108,7 +109,7 @@ const StepThree = ({ formik }) => {
         alignItems="flex-start"
       >
         <Grid>
-          <Typography variant="body" className="StepThree_label">
+          <Typography variant="body1" align="left" className="StepThree_label">
             Do you use Spotify?
           </Typography>
         </Grid>
