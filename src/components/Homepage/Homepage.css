@@ -49,11 +49,31 @@
   height: 300px;
 }
 
+.HomePage_Cloud {
+  position: absolute;
+  top: 10px;
+  right: 400px;
+}
+
 @media only screen and (min-width: 768px) {
   .HomePage_PhoneHeading {
     display: none;
   }
   .HomePage_Felix {
     height: 600px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .HomePage_FormSteps.HomePage_FormSteps {
+    display: none;
+  }
+  .HomePage_form_navigation {
+    bottom: 0px;
+    position: absolute;
+    left: 0px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: var(--light);
+    border-bottom: none;
   }
 }

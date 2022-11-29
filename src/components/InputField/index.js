@@ -23,7 +23,7 @@ const InputField = ({
       className="InputField"
     >
       {label !== "" && (
-        <Typography variant="body" className="InputField_label">
+        <Typography variant="body1" align="left" className="InputField_label">
           {label}
         </Typography>
       )}
@@ -36,7 +36,7 @@ const InputField = ({
         placeholder={placeholder}
       />
       {error && (
-        <Typography className="InputField_ErrorText" variant="caption">
+        <Typography className="InputField_ErrorMessage" variant="caption">
           {errorMessage}
         </Typography>
       )}

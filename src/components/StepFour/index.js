@@ -1,14 +1,15 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
 import InputField from "../InputField";
-import FormHeading from "../FormHeading";
 import RadioItem from "../RadioItems";
 import "./StepFour.css";
 
 const StepFour = ({ formik }) => {
   return (
     <Grid item xs={12} container justifyContent="center" alignContent="center">
-      <FormHeading text=" How Long does it take for you to get ready for work?" />
+      <Typography className="FormHeading">
+        How Long does it take for you to get ready for work?
+      </Typography>
       <InputField
         name="readyTime"
         placeholder="*Yawn* I usually.."
@@ -38,7 +39,7 @@ const StepFour = ({ formik }) => {
         alignItems="flex-start"
       >
         <Grid>
-          <Typography variant="body" className="StepFour_label">
+          <Typography variant="body1" align="left" className="StepFour_label">
             Are you available for survey + early product releases?
           </Typography>
         </Grid>

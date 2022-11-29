@@ -5,7 +5,7 @@
 .StepThree_error {
   color: var(--error);
 }
-.StepThree_label {
-  font-weight: 600;
+.StepThree_label.StepThree_label {
+  font-weight: 540;
   color: var(--primary);
 }
