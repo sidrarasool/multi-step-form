@@ -1,12 +1,12 @@
 .FinalPage {
+  --footer-background: #7843ea;
+  --share-btn: #fae41c;
   background-image: url("../../images/FinalPage.svg");
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  --footer-background: #7843ea;
-  --share-btn: #fae41c;
 }
 
 .FinalPage_heading {
