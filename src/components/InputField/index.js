@@ -23,7 +23,7 @@ const InputField = ({
       className="InputField"
     >
       {label !== "" && (
-        <Typography variant="body" className="InputField_label">
+        <Typography variant="body1" align="left" className="InputField_label">
           {label}
         </Typography>
       )}

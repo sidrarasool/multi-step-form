@@ -9,6 +9,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.FormHeading.FormHeading {
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .FormHeading.FormHeading {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
