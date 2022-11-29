@@ -1,5 +1,3 @@
-@import "../../GlobalStyles.css";
-
 .StepFour_error {
   color: var(--error);
 }

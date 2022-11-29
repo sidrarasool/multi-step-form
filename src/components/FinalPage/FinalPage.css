@@ -1,7 +1,4 @@
-@import "../../GlobalStyles.css";
-
 :root {
-  --heading: #fff;
   --footer-background: #7843ea;
   --share-btn: #fae41c;
 }
@@ -16,7 +13,7 @@
 }
 
 .FinalPage_heading {
-  color: var(--heading);
+  color: var(--light);
 }
 
 .FinalPage_summary_container {
