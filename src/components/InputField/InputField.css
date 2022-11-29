@@ -23,19 +23,22 @@
 }
 
 .InputField_TextField:focus {
-  border: none important!;
+  outline-color: 0.5px var(--dark);
 }
 
 .InputField_Error {
   background-color: var(--error-background);
   border-radius: 30px;
-  border: none;
   height: 2rem;
   width: 85%;
   box-shadow: 0px 0px 1.5px var(--dark);
   padding: 0px 15px;
   margin: 5px 5px 5px 0px;
   border: 1px solid var(--error);
+}
+
+.InputField_Error:focus {
+  outline-color: var(--error);
 }
 
 .InputField_label {

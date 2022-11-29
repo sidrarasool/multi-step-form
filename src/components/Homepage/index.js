@@ -5,6 +5,8 @@ import { ReactComponent as Logo } from "../../images/Logo.svg";
 import { ReactComponent as Felix } from "../../images/Felix.svg";
 import { ReactComponent as VFLogo } from "../../images/VFLogo.svg";
 import { ReactComponent as Cloud1 } from "../../images/Cloud1.svg";
+import { ReactComponent as Cloud2 } from "../../images/Cloud2.svg";
+import { ReactComponent as Cloud3 } from "../../images/Cloud3.svg";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import validationSchema from "../ValidationSchema";
 import StepOne from "../StepOne";
@@ -169,6 +171,8 @@ const Homepage = () => {
             className="HomePage_FormSteps"
           >
             {page === 1 && <Cloud1 className="HomePage_Cloud" />}
+            {page === 2 && <Cloud2 className="HomePage_Cloud" />}
+            {page === 3 && <Cloud3 className="HomePage_Cloud" />}
             <Felix className="HomePage_Felix" />
           </Grid>
         )}
