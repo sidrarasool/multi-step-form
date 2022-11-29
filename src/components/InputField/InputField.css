@@ -35,7 +35,7 @@
   box-shadow: 0px 0px 1.5px var(--dark);
   padding: 0px 15px;
   margin: 5px 5px 5px 0px;
-  border: 1px solid var(--error-text);
+  border: 1px solid var(--error);
 }
 
 .InputField_label {
@@ -44,6 +44,6 @@
 }
 
 .InputField_ErrorMessage.InputField_ErrorMessage {
-  color: var(--error-text);
+  color: var(--error);
   margin-left: 5px;
 }
