@@ -47,31 +47,31 @@ const InputField = ({
 
 InputField.propTypes = {
   /**
-   *  A name for text field and it is mandatory
+   *  A name for text field
    */
   name: PropTypes.string.isRequired,
   /**
-   * A function that will trigger on value change and it is mandatory
+   * A function that will trigger on value change
    */
   onChange: PropTypes.func.isRequired,
   /**
-   * A function that will trigger when the text field is blurred and it is mandatory
+   * A function that will trigger when the text field is blurred
    */
   onBlur: PropTypes.func.isRequired,
   /**
-   * A placeholder value in the textfield and it is mandatory
+   * A placeholder value in the textfield
    */
   placeholder: PropTypes.string.isRequired,
   /**
-   * The value of the textfield and it is mandatory
+   * The value of the textfield
    */
   value: PropTypes.string.isRequired,
   /**
-   * The boolean value of the textfield that prompts if the value is invalid or not and it is mandatory
+   * The boolean value of the textfield that prompts if the value is invalid or not
    */
   error: PropTypes.bool.isRequired,
   /**
-   * The error message when the value of textfield is invalid and it is mandatory
+   * The error message when the value of textfield is invalid
    */
   errorMessage: PropTypes.string,
   /**

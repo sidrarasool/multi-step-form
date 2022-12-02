@@ -23,11 +23,11 @@ const DataField = ({ label, data }) => {
 
 DataField.propTypes = {
   /**
-   * The label for the data field and it is mandatory
+   * The label for the data field
    */
   label: PropTypes.string.isRequired,
   /**
-   * The value of the data field and it is mandatory
+   * The value of the data field
    */
   data: PropTypes.string.isRequired,
 };

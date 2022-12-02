@@ -23,15 +23,15 @@ const RadioItem = ({ value, onChange, name, defaultChecked = false, id }) => {
 
 RadioItem.propTypes = {
   /**
-   * The value of the radio input and it is mandatory
+   * The value of the radio input
    */
   value: PropTypes.string.isRequired,
   /**
-   * A function that will trigger on value change and it is mandatory
+   * A function that will trigger on value change
    */
   onChange: PropTypes.func.isRequired,
   /**
-   *  A name for radio button and it is mandatory
+   *  A name for radio button
    */
   name: PropTypes.string.isRequired,
   /**
@@ -39,7 +39,7 @@ RadioItem.propTypes = {
    */
   defaultChecked: PropTypes.bool,
   /**
-   * The ID of the input element, corresponding to the label's htmlFor attribute and it is mandatory
+   * The ID of the input element, corresponding to the label's htmlFor attribute
    */
   id: PropTypes.string.isRequired,
 };
