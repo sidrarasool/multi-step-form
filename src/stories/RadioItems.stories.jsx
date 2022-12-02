@@ -2,46 +2,37 @@ import RadioItem from "../components/RadioItems";
 import React, { useState } from "react";
 
 export default {
-  title: "Components/RadioItems",
-  component: "RadioItem",
-  argTypes: {
-    defaultChecked: {
-      control: "select",
-      options: ["option1", "option2", "none"],
-    },
-  },
+  title: "components/RadioItem",
+  component: RadioItem,
 };
 
-const Template = (args) => {
+const Template = ({ name }) => {
   const [checked, setChecked] = useState(false);
   return (
-    <div>
+    <>
       <RadioItem
-        name={args.name}
-        value={args.firstOption}
-        id={args.firstOption}
+        name={name}
+        value="Male"
+        id="male"
         onChange={(e) => {
           setChecked(e.target.value);
         }}
-        defaultChecked={args.defaultChecked === "option1"}
+        defaultChecked={false}
       />
       <RadioItem
-        name={args.name}
-        value={args.secondOption}
-        id={args.secondOption}
+        name={name}
+        value="Female"
+        id="femlae"
         onChange={(e) => {
           setChecked(e.target.value);
         }}
-        defaultChecked={args.defaultChecked === "option2"}
+        defaultChecked={true}
       />
-    </div>
+    </>
   );
 };
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const Default = Template.bind({});
+Default.args = {
   name: "gender",
-  firstOption: "Male",
-  secondOption: "Female",
-  defaultChecked: "option1",
 };

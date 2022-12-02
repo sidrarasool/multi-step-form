@@ -16,6 +16,7 @@
     "react-phone-input-2": "^2.15.1",
     "react-phone-number-input": "^3.2.12",
     "react-scripts": "5.0.1",
+    "storybook-addon-react-docgen": "^1.2.42",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },

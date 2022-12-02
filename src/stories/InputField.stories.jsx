@@ -6,28 +6,6 @@ export default {
   component: InputField,
 };
 
-// export const Primary = () => {
-//   const [value, setValue] = useState("");
-//   const [error, setError] = useState("");
-//   return (
-//     <InputField
-//       name="Sample Test"
-//       value={value}
-//       onChange={(e) => {
-//         setValue(e.target.value);
-//         setError(value.length <= 4);
-//       }}
-//       onBlur={() => {
-//         setError(value.length <= 4);
-//       }}
-//       placeholder="Type here.."
-//       error={error}
-//       label="Sample Test"
-//       errorMessage="Invalid Input"
-//     />
-//   );
-// };
-
 const Template = (args) => {
   const [value, setValue] = useState("");
   const [error, setError] = useState("");
@@ -47,8 +25,8 @@ const Template = (args) => {
   );
 };
 
-export const Red = Template.bind({});
-Red.args = {
+export const Default = Template.bind({});
+Default.args = {
   name: "Sample test",
   placeholder: "Type here..",
   label: "Sample Test",
